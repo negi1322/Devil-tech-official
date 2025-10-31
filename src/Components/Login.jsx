@@ -42,15 +42,14 @@ const Login = () => {
       contact != "" &&
       password != "" &&
       choose != ""
-      
     ) {
       localStorage.setItem("choose", choose);
     } else if (choose == "User") {
       navigate("/User");
-      return
+      return;
     } else if (choose == "Home") {
       navigate("/Home");
-      return
+      return;
     } else {
       alert("failer");
     }
@@ -63,13 +62,13 @@ const Login = () => {
       {/* code for login page start here */}
       <div className="container">
         <div className="row align-items-center">
-          {/* <div className="col-md-6 col-12" data-aos="fade-down">
+          <div className="col-md-6 col-12" data-aos="fade-down">
             <img
               src="public\login.png"
               alt="LOGIN PAGE IMAGE IS HERE"
               className="img-fluid"
             />
-          </div> */}
+          </div>
 
           <div className="col-md-6 col-12" data-aos="flip-left">
             <form
@@ -191,6 +190,8 @@ const Login = () => {
               </button>
             </form>
           </div>
+
+          <div className="border border-2">this is for the branches</div>
         </div>
       </div>
     </>
