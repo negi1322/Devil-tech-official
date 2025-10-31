@@ -1,0 +1,6 @@
+{
+  "nameRegex": "^[A-Za-z\\s]+$",
+  "mobileRegex":"^[0-9]{10}$",
+  "passwordRegex": "^.{1,6}$",
+  "emailRegex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+}

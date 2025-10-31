@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+  place-content: center;
+}
+
+/* reDeclared styles */
+* {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+.form-container {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 20px;
+}
+
+/* Hide arrows in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.password-icon {
+  position: absolute !important;
+  top: 38px;
+  border: transparent;
+  right: 10px;
+  background-color: white;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .form-container {
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+      rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+      rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+      rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+      rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+      rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    margin-bottom: 4px;
+  }
+
+  h1 {
+    font-size: 32px !important;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+}
+
+/* .sumbit-btn{
+  background: #CCAF59;
+
+} */
